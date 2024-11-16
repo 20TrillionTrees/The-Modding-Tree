@@ -26,3 +26,13 @@ addLayer("p", {
     ],
     layerShown(){return true}
 })
+
+upgrades: {
+        11: {
+    title: "Yes",
+    description: "Timewalls are doubled.",
+    cost: new Decimal(1),
+
+	    if (hasUpgrade('p', 11)) gain = gain.times(2)
+        },
+    },
